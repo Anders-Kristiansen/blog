@@ -1,0 +1,22 @@
+baseurl: "https://Anders-Kristiansen.github.io"
+languageCode: "en-us"
+title: "Cloud Securitylog"
+theme: "github-style"
+pygmentsCodeFences: true
+pygmentsUseClasses: true
+
+params:
+  description: "Cloud Security blog"
+  copyright: "Anders Kristiansen"
+  opengraph: true
+  lastmod: true
+  favicon: "/images/github-mark.png"
+  avatar: "/images/avatarcloudazure.png"
+  headerIcon: "/images/github-mark-white.png"
+  location: "Norway"
+  userStatusEmoji: "🛡️" #flere her: 😪 sleepy face , 😁 beeming , 💤 sleepy , 🛡️s hield
+  # Social links
+  social:
+  github: "anders-kristiansen"
+  linkedin: "akristiansendotcom"
+  bluesky: "anderskristiansen.bsky.social"
