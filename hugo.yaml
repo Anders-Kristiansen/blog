@@ -10,9 +10,9 @@ params:
   copyright: "Anders Kristiansen"
   opengraph: true
   lastmod: true
-  favicon: "/images/github-mark.png"
-  avatar: "/images/avatarcloudazure.png"
-  headerIcon: "/images/github-mark-white.png"
+  favicon: "/img/github-mark.png"
+  avatar: "/img/avatarcloudazure.png"
+  headerIcon: "/img/github-mark-white.png"
   location: "Norway"
   userStatusEmoji: "🛡️" #flere her: 😪 sleepy face , 😁 beeming , 💤 sleepy , 🛡️s hield
   # Social links
