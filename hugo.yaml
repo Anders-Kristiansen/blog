@@ -1,4 +1,5 @@
-baseurl: "https://Anders-Kristiansen.github.io"
+#baseurl: "https://Anders-Kristiansen.github.io"
+baseurl: "https://anderskristiansen.com"
 languageCode: "en-us"
 title: "Cloud Securitylog"
 theme: "github-style"
