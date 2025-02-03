@@ -13,7 +13,7 @@ params:
   lastmod: true
   favicon: "img/github-mark.png"
   avatar: "img/avatarcloudazure.png"
-  headerIcon: "/blog/img/github-mark-white.png"
+  headerIcon: "img/github-mark-white.png"
   location: "Norway"
   userStatusEmoji: "🛡️" #flere her: 😪 sleepy face , 😁 beeming , 💤 sleepy , 🛡️s hield
   # Social links
