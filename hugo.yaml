@@ -1,7 +1,7 @@
 #baseurl: "https://Anders-Kristiansen.github.io"
 baseurl: "https://anderskristiansen.com"
 languageCode: "en-us"
-title: "Cloud Securitylog"
+title: "Cloud Securityblog"
 theme: "github-style"
 pygmentsCodeFences: true
 pygmentsUseClasses: true
