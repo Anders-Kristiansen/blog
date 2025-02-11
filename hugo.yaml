@@ -21,3 +21,5 @@ params:
   github: "anders-kristiansen"
   linkedin: "akristiansendotcom"
   bluesky: "anderskristiansen.bsky.social"
+  #services
+  services.googleAnalytics: "G-DRSS5P3F7Y"
