@@ -22,6 +22,6 @@ params:
   linkedin: "akristiansendotcom"
   bluesky: "anderskristiansen.bsky.social"
   #services
-  services:
-    googleAnalytics:
-      ID: "G-DRSS5P3F7Y"
+services:
+  googleAnalytics:
+    ID: "G-DRSS5P3F7Y"
