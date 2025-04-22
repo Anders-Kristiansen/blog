@@ -6,14 +6,18 @@ theme: "github-style"
 pygmentsCodeFences: true
 pygmentsUseClasses: true
 
+taxonomies:
+  tag: tags
+  series: series
+
 params:
   description: "Cloud Security blog"
   copyright: "Anders Kristiansen"
   opengraph: true
   lastmod: true
-  favicon: "img/github-mark.png"
-  avatar: "img/avatarcloudazure.png"
-  headerIcon: "img/github-mark-white.png"
+  favicon: "/img/github-mark.png"
+  avatar: "/img/avatarcloudazure.png"
+  headerIcon: "/img/github-mark-white.png"
   location: "Norway"
   userStatusEmoji: "🛡️" #flere her: 😪 sleepy face , 😁 beeming , 💤 sleepy , 🛡️s hield
   # Social links
