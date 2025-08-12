@@ -22,10 +22,15 @@ params:
   userStatusEmoji: "🛡️" #flere her: 😪 sleepy face , 😁 beeming , 💤 sleepy , 🛡️s hield
   # Social links
   social:
-  github: "anders-kristiansen"
-  linkedin: "akristiansendotcom"
-  bluesky: "anderskristiansen.bsky.social"
+    github: "anders-kristiansen"
+    linkedin: "akristiansendotcom"
+    bluesky: "anderskristiansen.bsky.social"
   #services
 services:
   googleAnalytics:
     ID: "G-DRSS5P3F7Y"
+
+# Ensure private research repo is never published
+ignoreFiles:
+- "^research/"
+- "/_notes/"
