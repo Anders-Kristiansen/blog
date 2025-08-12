@@ -1,3 +1,7 @@
 [submodule "themes/github-style"]
 	path = themes/github-style
 	url = https://github.com/Anders-Kristiansen/github-style.git
+[submodule "research"]
+	path = research
+	url = https://github.com/Anders-Kristiansen/research.git
+	branch = main
