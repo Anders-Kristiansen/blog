@@ -1,7 +1,7 @@
 ---
 title: "Hello World"
 date: 2025-08-12
-draft: false
+draft: true
 summary: "Short description of this post."
 tags: ["example", "2025"]
 series: []
