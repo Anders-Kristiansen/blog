@@ -9,6 +9,9 @@
 /assets/jsconfig.json
 hugo_stats.json
 
+# Private research folder (keep out of repo)
+research/
+
 # Executable may be added to repository
 hugo.exe
 hugo.darwin
