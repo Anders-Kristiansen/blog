@@ -9,6 +9,7 @@
 {{ $section = sort $section "Date" "desc" }}
 {{ $section_title = "Latest posts" }}
 {{ end }}
+{{ $section = sort $section "Date" "desc" }}
 <div>
   <div class="position-relative">
     {{ with .Site.GetPage "/readme"  }}

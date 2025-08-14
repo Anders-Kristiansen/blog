@@ -1,9 +1,9 @@
 {{ $path := .Destination }}
-{{ if not (strings.HasPrefix $path "http") }}
-  {{ if not (strings.HasPrefix $path "/") }}
-    {{ $path = print "/img/" (path.Base $path) }}
-  {{ end }}
+{{ if strings.HasPrefix $path "http" }}
+  <img src="{{ $path }}" alt="{{ .Text }}" {{ with .Title }} title="{{ . }}"{{ end }}>
+{{ else if strings.HasPrefix $path "/" }}
   <img src="{{ $path | absURL }}" alt="{{ .Text }}" {{ with .Title }} title="{{ . }}"{{ end }}>
 {{ else }}
-  <img src="{{ .Destination }}" alt="{{ .Text }}" {{ with .Title }} title="{{ . }}"{{ end }}>
+  <!-- Preserve relative paths so page-bundle images work without rewriting -->
+  <img src="{{ $path }}" alt="{{ .Text }}" {{ with .Title }} title="{{ . }}"{{ end }}>
 {{ end }}

@@ -5,6 +5,7 @@ title: "Cloud Securityblog"
 theme: "github-style"
 pygmentsCodeFences: true
 pygmentsUseClasses: true
+enableEmoji: true
 
 taxonomies:
   tag: tags
@@ -20,6 +21,9 @@ params:
   headerIcon: "/img/github-mark-white.png"
   location: "Norway"
   userStatusEmoji: "🛡️" #flere her: 😪 sleepy face , 😁 beeming , 💤 sleepy , 🛡️s hield
+  mermaid: true
+  custom_css:
+  - "/css/custom-width.css"
   # Social links
   social:
     github: "anders-kristiansen"

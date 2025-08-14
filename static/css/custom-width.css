@@ -1,0 +1,34 @@
+/*
+  Site-specific width overrides
+  Goal: widen reading area on desktops while keeping mobile/tablet unchanged.
+  Safe: only touches GitHub-style’s container classes used in posts.
+*/
+
+/* Slightly wider content on larger screens */
+@media (min-width: 1024px) {
+  /* Main containers used by the theme */
+  .container-lg,
+  .markdown-body {
+    max-width: 1200px !important; /* default ~1012px; bump for better use of space */
+  }
+
+  /* Keep inner file box matching the new width */
+  .repository-content.gist-content,
+  .new-discussion-timeline,
+  .Box-body {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* On very wide screens, allow a touch more width but cap to preserve line length */
+@media (min-width: 1400px) {
+  .container-lg,
+  .markdown-body,
+  .repository-content.gist-content,
+  .new-discussion-timeline,
+  .Box-body {
+    max-width: 1280px !important;
+  }
+}
