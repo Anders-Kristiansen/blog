@@ -1,0 +1,4 @@
+<!-- RSS Feed Auto-Discovery -->
+{{ with .OutputFormats.Get "RSS" }}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}" />
+{{ end }}

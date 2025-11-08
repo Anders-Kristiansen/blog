@@ -7,6 +7,15 @@ pygmentsCodeFences: true
 pygmentsUseClasses: true
 enableEmoji: true
 
+# RSS Feed Configuration
+outputs:
+  home:
+    - HTML
+    - RSS
+  section:
+    - HTML
+    - RSS
+
 taxonomies:
   tag: tags
   series: series
@@ -14,6 +23,9 @@ taxonomies:
 params:
   description: "Cloud Security blog"
   copyright: "Anders Kristiansen"
+  author:
+    name: "Anders Kristiansen"
+    email: ""
   opengraph: true
   lastmod: true
   favicon: "/img/github-mark.png"
@@ -24,6 +36,8 @@ params:
   mermaid: true
   custom_css:
   - "/css/custom-width.css"
+  # RSS Feed Configuration
+  rssLimit: 20  # Number of items in RSS feed
   # Social links
   social:
     github: "anders-kristiansen"
