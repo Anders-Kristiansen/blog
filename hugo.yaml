@@ -23,9 +23,7 @@ taxonomies:
 params:
   description: "Cloud Security blog"
   copyright: "Anders Kristiansen"
-  author:
-    name: "Anders Kristiansen"
-    email: ""
+  author: "Anders Kristiansen"
   opengraph: true
   lastmod: true
   favicon: "/img/github-mark.png"
