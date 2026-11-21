@@ -4,6 +4,18 @@
   Safe: only touches GitHub-style’s container classes used in posts.
 */
 
+.overview-featured-post .repo {
+  font-size: 18px;
+}
+
+.overview-disclaimer {
+  clear: both;
+}
+
+.overview-disclaimer summary {
+  cursor: pointer;
+}
+
 /* Slightly wider content on larger screens */
 @media (min-width: 1024px) {
   /* Main containers used by the theme */
