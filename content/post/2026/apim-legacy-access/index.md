@@ -337,5 +337,6 @@ Update APIM, rotate its credentials, close unused access paths and hunt the logs
 - [Microsoft Learn: Azure Key Vault monitoring data reference](https://learn.microsoft.com/en-us/azure/key-vault/general/monitor-key-vault-reference)
 - [Microsoft Learn: Microsoft Graph activity logs](https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview)
 - [Microsoft Learn: Configure data retention in Log Analytics](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-retention-configure)
+- WIz TI center
 
 *This post was co-written with the assistance of AI.*
