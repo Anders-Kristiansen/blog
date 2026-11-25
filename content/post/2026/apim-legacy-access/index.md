@@ -35,7 +35,7 @@ Microsoft [retired it in March 2025](https://learn.microsoft.com/en-us/azure/api
 
 ## What to do now 🛠️
 
-1. **Update and assume exposure.** Check the runtime against the [NSM advisory](https://nsm.no/aktuelt/nsm-deler-tiltak-mot-sarbarhet-i-azure-api-management), and treat secrets, tokens and named values in APIM as exposed.
+1. **Update and assume exposure.** Check the runtime against the [NSM advisory](https://nsm.no/aktuelt/nsm-deler-tiltak-mot-sarbarhet-i-azure-api-management), and treat secrets, tokens and named values in APIM as exposed.  Basic, Standard and Premium are the affected classic tiers  are the ones we care about here, sku.name field of its Microsoft.ApiManagement/service resource. 
 2. **Rotate** them: backend credentials, app registration secrets, subscription keys, the Key Vault secrets APIM references and the tenant access keys.
 3. **Clean up APIM users.** Remove or block accounts you don't need, and check who can edit policies or use tracing.
 4. **Turn off the old Management API.** Set **Enable Management REST API** to **No** on every instance.
@@ -291,6 +291,17 @@ MicrosoftGraphActivityLogs
 
 **What it tells you:** whether the app did anything outside its normal job, such as listing users, groups, apps or service principals, reading mail, or adding credentials to other apps. Compare the IPs with the new addresses from Step 4.
 
+
+## Indicators of Compromise (IOCs)
+[](https://app.wiz.io/boards/threat-center/wiz-adv-2026-219#indicators-of-compromise-iocs)
+Used almost exclusively for service principal sign-ins with stolen secrets (November 8 to 21):
+- `113.120.71[.]142`, `113.120.72[.]185`, `113.120.73[.]59`, `113.120.73[.]129`, `113.120.73[.]179`, `113.120.75[.]179`, `113.120.83[.]43`, `113.120.83[.]169`, `113.120.114[.]162`, `113.120.114[.]171`, `113.120.114[.]186`, `113.120.114[.]253`, `113.120.115[.]19`, `113.120.115[.]72`
+- `113.124.8[.]141`, `113.124.9[.]66`, `113.124.9[.]154`, `113.124.9[.]246`
+- `123.168.77[.]28`
+- `222.173.70[.]66`
+The attacker also used other addresses in `113.120.0.0/16`, `113.124.0.0/16`, `123.168.0.0/16`, `120.221.0.0/16` and `222.173.70.0/24`, and `23.162.24[.]134` and `23.162.24[.]135` for Key Vault, Storage and APIM gateway access with the user agent `curl/7.88.1`. 
+
+These are shared with legitimate traffic, so treat a match as suspicious only together with the behavior
 ## Reading the results 🧠
 
 - **No match isn't proof of safety.** Check that each log was enabled and kept for the whole period.
@@ -326,5 +337,6 @@ Update APIM, rotate its credentials, close unused access paths and hunt the logs
 - [Microsoft Learn: Azure Key Vault monitoring data reference](https://learn.microsoft.com/en-us/azure/key-vault/general/monitor-key-vault-reference)
 - [Microsoft Learn: Microsoft Graph activity logs](https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview)
 - [Microsoft Learn: Configure data retention in Log Analytics](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-retention-configure)
+- WIz TI center
 
 *This post was co-written with the assistance of AI.*
